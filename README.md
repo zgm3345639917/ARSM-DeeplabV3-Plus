@@ -31,7 +31,7 @@ torch==2.0.1
 4### 文件下载
 训练所需的deeplab_mobilenetv2.pth和deeplab_xception.pth可在123网盘中下载。     
 链接: https://www.123865.com/s/BC5eTd-A87JH提取码:1234
-下载好预训练权重后，可以新建一个“model_data”的文件夹，将2个权重放入此文件夹中，在train.py程序中将“model_data/deeplab_mobilenetv2.pth”写入model_path = ""，即可开始训练  
+下载好预训练权重后，可以新建一个“model_data”的文件夹，将2个权重放入此文件夹中。 
 
 Cityscapes数据集的123网盘如下：  
 链接: https://www.123865.com/s/BC5eTd-h87JH提取码:3333   
@@ -39,7 +39,7 @@ Cityscapes数据集的123网盘如下：
 5### 训练步骤
 #### a、训练Cityscapes数据集
 1、将我提供的Cityscapes数据集直接以“Cityscapes”命名文件夹即可（无需运行voc_annotation.py）。  
-2、在train.py中设置对应参数，默认参数已经对应Cityscapes数据集所需要的参数了，所以只要修改backbone和model_path即可。  
+2、在train.py中设置对应参数，默认参数已经对应Cityscapes数据集所需要的参数了，所以只要修改backbone和model_path即可。 在train.py程序中将“model_data/deeplab_mobilenetv2.pth”写入model_path = ""。  
 3、运行train.py进行训练。 
 4、训练时会自动生成logs文件夹，训练的权重都存放在其中。
 
