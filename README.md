@@ -1,37 +1,25 @@
-## DeepLabv3+：Encoder-Decoder with Atrous Separable Convolution语义分割模型在Pytorch当中的实现
+## ARSM-DeepLabV3-Plus
 ---
 
 ### 目录
-1. [仓库更新 Top News](#仓库更新)
-2. [相关仓库 Related code](#相关仓库)
-3. [性能情况 Performance](#性能情况)
-4. [所需环境 Environment](#所需环境)
-5. [文件下载 Download](#文件下载)
-6. [训练步骤 How2train](#训练步骤)
-7. [预测步骤 How2predict](#预测步骤)
-8. [评估步骤 miou](#评估步骤)
-9. [参考资料 Reference](#Reference)
-
-## Top News
-**`2022-04`**:**支持多GPU训练。**  
-
-**`2022-03`**:**进行大幅度更新、支持step、cos学习率下降法、支持adam、sgd优化器选择、支持学习率根据batch_size自适应调整。**  
-BiliBili视频中的原仓库地址为：https://github.com/bubbliiiing/deeplabv3-plus-pytorch/tree/bilibili
-
-**`2020-08`**:**创建仓库、支持多backbone、支持数据miou评估、标注数据处理、大量注释等。**  
+1. [相关仓库 Related code](#相关仓库)
+2. [性能情况 Performance](#性能情况)
+3. [所需环境 Environment](#所需环境)
+4. [文件下载 Download](#文件下载)
+5. [训练步骤 How2train](#训练步骤)
+6. [预测步骤 How2predict](#预测步骤)
+7. [评估步骤 miou](#评估步骤)
+8. [参考资料 Reference](#Reference)
 
 ## 相关仓库
 | 模型 | 路径 |
 | :----- | :----- |
-Unet | https://github.com/bubbliiiing/unet-pytorch  
-PSPnet | https://github.com/bubbliiiing/pspnet-pytorch
-deeplabv3+ | https://github.com/bubbliiiing/deeplabv3-plus-pytorch
-hrnet | https://github.com/bubbliiiing/hrnet-pytorch
+ARSM-DeeplabV3-Plus | https://github.com/zgm3345639917/ARSM-DeeplabV3-Plus
 
 ### 性能情况
 | 训练数据集 | 权值文件名称 | 测试数据集 | 输入图片大小 | mIOU | 
 | :-----: | :-----: | :------: | :------: | :------: | 
-| VOC12+SBD | [deeplab_mobilenetv2.pth](https://github.com/bubbliiiing/deeplabv3-plus-pytorch/releases/download/v1.0/deeplab_mobilenetv2.pth) | VOC-Val12 | 512x512| 72.59 | 
+| Cityscapes | [deeplab_mobilenetv2.pth](https://github.com/bubbliiiing/deeplabv3-plus-pytorch/releases/download/v1.0/deeplab_mobilenetv2.pth) | VOC-Val12 | 512x512| 72.59 | 
 | VOC12+SBD | [deeplab_xception.pth](https://github.com/bubbliiiing/deeplabv3-plus-pytorch/releases/download/v1.0/deeplab_xception.pth) | VOC-Val12 | 512x512| 76.95 | 
 
 ### 所需环境
