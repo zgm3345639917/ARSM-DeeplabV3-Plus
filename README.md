@@ -23,10 +23,7 @@ ARSM-DeeplabV3-Plus | https://github.com/zgm3345639917/ARSM-DeeplabV3-Plus
 | cityscapes_train | [deeplab_xception.pth](https://www.123865.com/s/BC5eTd-A87JH提取码:1234) | cityscapes_val | 512x512| 68.25 | 
 
 3### 所需环境
-torch==2.0.1
-
-### 注意事项
-代码中的deeplab_mobilenetv2.pth和deeplab_xception.pth是基于VOC拓展数据集训练的。训练和预测时注意修改backbone。    
+torch==2.0.1    
 
 4### 文件下载
 训练所需的deeplab_mobilenetv2.pth和deeplab_xception.pth可在123网盘中下载。     
@@ -83,7 +80,8 @@ _defaults = {
 ```
 3、运行predict.py，输入    
 ```python
-img/1.jpg（img文件夹中的图片都可以用来预测，自己也可以添加图片）
+img/1.jpg
+（img文件夹中的图片都可以用来预测，自己也可以添加图片）
 ```
 可完成预测。    
 4、在predict.py里面进行设置可以进行fps测试、整个文件夹的测试和video视频检测。   
